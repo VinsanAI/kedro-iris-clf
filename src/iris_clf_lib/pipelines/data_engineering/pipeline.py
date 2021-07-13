@@ -50,6 +50,7 @@ def create_pipeline(**kwargs):
                     test_y="example_test_y",
                 ),
                 name="split",
+                tags=["de"],
             )
         ]
     )

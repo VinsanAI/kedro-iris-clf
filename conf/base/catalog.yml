@@ -45,3 +45,7 @@
 example_iris_data:
   type: pandas.CSVDataSet
   filepath: data/01_raw/iris.csv
+  
+my_dataset:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/my_dataset.csv

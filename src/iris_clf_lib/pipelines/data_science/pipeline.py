@@ -45,18 +45,21 @@ def create_pipeline(**kwargs):
                 ["example_train_x", "example_train_y", "parameters"],
                 "example_model",
                 name="train",
+                tags=["ds","train"],
             ),
             node(
                 predict,
                 dict(model="example_model", test_x="example_test_x"),
                 "example_predictions",
                 name="predict",
+                tags=["ds","predict"],
             ),
             node(
                 report_accuracy,
                 ["example_predictions", "example_test_y"],
                 None,
                 name="report",
+                tags=["ds","report"],
             ),
         ]
     )
